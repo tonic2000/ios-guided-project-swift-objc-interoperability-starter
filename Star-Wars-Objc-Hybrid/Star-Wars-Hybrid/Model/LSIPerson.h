@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-// TODO: Add nullabilty annotations
-
 // TODO: Rename class for Swift
 
 @interface LSIPerson : NSObject
+
+// TODO: Add nullabilty annotations
 
 @property (nonatomic, copy, readonly) NSString *name;
 @property (nonatomic, copy, readonly) NSString *birthYear;
