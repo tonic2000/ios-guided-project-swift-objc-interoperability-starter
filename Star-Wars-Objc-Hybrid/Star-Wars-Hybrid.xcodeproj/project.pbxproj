@@ -32,6 +32,9 @@
 		BD101041237A4130002426B7 /* LSIPersonSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSIPersonSearchTableViewController.m; sourceTree = "<group>"; };
 		BD101043237A42C9002426B7 /* LSIPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSIPerson.m; sourceTree = "<group>"; };
 		BD101044237A42C9002426B7 /* LSIPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSIPerson.h; sourceTree = "<group>"; };
+		BD8BA112242980EE0081039A /* Star-Wars-Hybrid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Star-Wars-Hybrid-Bridging-Header.h"; sourceTree = "<group>"; };
+		BD8BA113242980EF0081039A /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		BD8BA117242981D80081039A /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +74,7 @@
 				BD10103E237A411F002426B7 /* Main.storyboard */,
 				BD101046237A42D2002426B7 /* Model */,
 				BD101047237A4374002426B7 /* Search TableView */,
-				BD101031237A40C0002426B7 /* Assets.xcassets */,
-				BD101033237A40C0002426B7 /* LaunchScreen.storyboard */,
-				BD101036237A40C0002426B7 /* Info.plist */,
-				BD101037237A40C0002426B7 /* main.m */,
+				BD8BA115242980FB0081039A /* Resources */,
 			);
 			path = "Star-Wars-Hybrid";
 			sourceTree = "<group>";
@@ -84,6 +84,7 @@
 			children = (
 				BD101044237A42C9002426B7 /* LSIPerson.h */,
 				BD101043237A42C9002426B7 /* LSIPerson.m */,
+				BD8BA117242981D80081039A /* PersonController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,8 +94,21 @@
 			children = (
 				BD101040237A4130002426B7 /* LSIPersonSearchTableViewController.h */,
 				BD101041237A4130002426B7 /* LSIPersonSearchTableViewController.m */,
+				BD8BA113242980EF0081039A /* PersonTableViewCell.swift */,
 			);
 			path = "Search TableView";
+			sourceTree = "<group>";
+		};
+		BD8BA115242980FB0081039A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD101031237A40C0002426B7 /* Assets.xcassets */,
+				BD101033237A40C0002426B7 /* LaunchScreen.storyboard */,
+				BD101036237A40C0002426B7 /* Info.plist */,
+				BD101037237A40C0002426B7 /* main.m */,
+				BD8BA112242980EE0081039A /* Star-Wars-Hybrid-Bridging-Header.h */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +142,7 @@
 				TargetAttributes = {
 					BD101021237A40BE002426B7 = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -303,15 +318,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = "Star-Wars-Hybrid/Info.plist";
+				INFOPLIST_FILE = "Star-Wars-Hybrid/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.Star-Wars-Hybrid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Star-Wars-Hybrid/Resources/Star-Wars-Hybrid-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -320,15 +339,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = "Star-Wars-Hybrid/Info.plist";
+				INFOPLIST_FILE = "Star-Wars-Hybrid/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.Star-Wars-Hybrid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Star-Wars-Hybrid/Resources/Star-Wars-Hybrid-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

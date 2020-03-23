@@ -8,12 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-// TODO: Create an instance of the LSIPerson to see how it's properties and initializers are imported into Swift
-
 // TODO: Add nullabilty annotations
 
-@interface LSIPerson : NSObject
+// TODO: Rename class for Swift
 
+@interface LSIPerson : NSObject
 
 @property (nonatomic, copy, readonly) NSString *name;
 @property (nonatomic, copy, readonly) NSString *birthYear;
@@ -26,6 +25,5 @@
                     eyeColor:(NSString *)eyeColor;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
-
 
 @end

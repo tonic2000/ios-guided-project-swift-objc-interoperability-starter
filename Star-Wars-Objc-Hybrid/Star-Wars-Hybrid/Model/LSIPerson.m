@@ -10,7 +10,10 @@
 
 @implementation LSIPerson
 
-- (instancetype)initWithName:(NSString *)name birthYear:(NSString *)birthYear height:(double)height eyeColor:(NSString *)eyeColor {
+- (instancetype)initWithName:(NSString *)name
+                   birthYear:(NSString *)birthYear
+                      height:(double)height
+                    eyeColor:(NSString *)eyeColor {
     self = [super init];
     if (self) {
         _name = [name copy];
@@ -28,12 +31,11 @@
     double height = [heightString doubleValue];
     NSString *eyeColor = dictionary[@"eye_color"];
     
-	// TODO: Discuss the failable initializer
-	
+    // Failable initializer will return nil if any of these required
+    // properties is missing. (It is risky to make assumptions about data)
     if (!name || !birthYear || !heightString || !eyeColor) {
         return nil;
     }
-    
     return [self initWithName:name birthYear:birthYear height:height eyeColor:eyeColor];
 }
 
