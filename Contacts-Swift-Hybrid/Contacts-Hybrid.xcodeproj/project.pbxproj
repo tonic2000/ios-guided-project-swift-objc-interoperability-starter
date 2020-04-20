@@ -46,6 +46,8 @@
 		B66F760D244E030000E0727E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BD0237D223DF91FB00065094 /* Main.storyboard */,
+				BD36BE0523A7F27C00ED64BD /* LaunchScreen.storyboard */,
 				BD36BE0823A7F27C00ED64BD /* Info.plist */,
 				BD36BE0323A7F27C00ED64BD /* Assets.xcassets */,
 				B66F7609244E023B00E0727E /* Contacts-Hybrid-Bridging-Header.h */,
@@ -76,8 +78,6 @@
 				BD36BDFC23A7F27B00ED64BD /* SceneDelegate.swift */,
 				BD36BE1023A7F2E200ED64BD /* ContactsTableViewController.swift */,
 				B66F7607244E002400E0727E /* Contact.swift */,
-				BD0237D223DF91FB00065094 /* Main.storyboard */,
-				BD36BE0523A7F27C00ED64BD /* LaunchScreen.storyboard */,
 				B66F760A244E023B00E0727E /* LSIContactController.h */,
 				B66F760B244E023B00E0727E /* LSIContactController.m */,
 				B66F760D244E030000E0727E /* Resources */,

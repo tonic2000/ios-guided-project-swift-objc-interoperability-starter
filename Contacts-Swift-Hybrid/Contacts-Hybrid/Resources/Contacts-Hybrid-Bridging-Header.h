@@ -4,7 +4,8 @@
 
 // Objective- C to Swift
 
-
+// This will be exposed to any Swift code file 
+#import "LSIContactController.h"
 
 
 
